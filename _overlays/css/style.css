@@ -1,6 +1,7 @@
 @font-face {
   src: url("../fonts/ValorantFont.ttf");
   font-family: "Valorant"; }
+
 body {
   width: 1920px;
   height: 1080px;
@@ -9,7 +10,7 @@ body {
   padding: 0px;
   margin: 0px;
   text-transform: uppercase;
-  color: white;
+  color: #E56399;
   text-shadow: 2px 2px 3px DimGray;
   font-family: "Valorant"; }
   body .scoreboard {
@@ -26,7 +27,7 @@ body {
     font-size: 30px;
     opacity: 0; }
     body .wrappers .teams {
-      color: #e5e5e5; }
+      color: #7F96FF; }
   body #p1Wrapper {
     left: 456px; }
   body #p2Wrapper {
@@ -65,8 +66,8 @@ body {
   body #gameHold {
     display: none; }
   body #roundBG {
-    background-color: rgba(0, 0, 0, 0.75);
-    outline: 1px solid #c40a18;
+    background-color: rgba(0, 0, 0, 0.616);
+    outline: 1px solid #320E3B;
     width: 240px;
     height: 36px;
     position: absolute;
@@ -87,14 +88,14 @@ body {
   body #rightBGWrapper {
     left: 1105px; }
   body .playerBG {
-    background-color: rgba(0, 0, 0, 0.75);
-    outline: 1px solid #c40a18;
+    background-color: rgba(0, 0, 0, 0.616);
+    outline: 1px solid #320E3B;
     width: 375px;
     height: 100%;
     position: absolute;
     filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.6)); }
   body .scoreBG {
-    background-color: #c40a18;
+    background-color: #320E3B;
     outline: 1px solid black;
     width: 49px;
     height: calc(100% - 4px);
@@ -132,6 +133,7 @@ body {
   to {
     top: 0px;
     opacity: 1.0; } }
+
 @keyframes player1slidein {
   from {
     width: 90px;
@@ -139,6 +141,7 @@ body {
   to {
     width: 375px;
     opacity: 1.0; } }
+
 @keyframes player2slidein {
   from {
     /* Using margins here isn't ideal but as the animation isn't playing that many times it should be alright. */
@@ -147,6 +150,7 @@ body {
   to {
     margin-right: 55px;
     opacity: 1.0; } }
+
 @keyframes p1score {
   from {
     left: 375px;
@@ -154,6 +158,7 @@ body {
   to {
     left: 0px;
     opacity: 1.0; } }
+
 @keyframes p2score {
   from {
     left: 0px;
@@ -161,5 +166,3 @@ body {
   to {
     left: 375px;
     opacity: 1.0; } }
-
-/*# sourceMappingURL=style.css.map */
